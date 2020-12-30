@@ -1,0 +1,28 @@
+<h3>Edit Restaurant List</h3>
+<div  *ngIf='alert' class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success</strong> Data updated successfully !
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form class='col-sm-10' [formGroup]="editReso" (ngSubmit)="collection()">
+  <div class="form-group">
+  <input required type="name" formControlName="name" placeholder="name" ngModel>
+  </div>
+  <br><br>
+  <div class="form-group">
+  <input required type="email" formControlName="email" placeholder="email" ngModel>
+  <span class= error *ngIf="email.invalid && email.touched ">email is not valid</span>
+</div>
+<br><br>
+<div class="form-group">
+  <input required type="address" formControlName="address" placeholder="address" ngModel>
+  <span class= error *ngIf="address.invalid && address.touched ">address is not valid</span>
+</div>
+
+  <br><br>
+  <button type="submit" [disabled]="editReso.invalid" class="btn btn-primary"> Update Data</button>
+</form>
+
+

@@ -1,0 +1,27 @@
+<h3>Add new restaurant</h3>
+<div  *ngIf='alert' class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success</strong> Data entered successfully !
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form class='col-sm-10' [formGroup]="addReso" (ngSubmit)="collectResto()">
+  <div class="form-group">
+  <input required type="name" formControlName="name" placeholder="name" ngModel>
+  </div>
+  <br><br>
+  <div class="form-group">
+  <input required type="email" formControlName="email" placeholder="email" ngModel>
+  <span class= error *ngIf="email.invalid && email.touched ">email is not valid</span>
+</div>
+<br><br>
+<div class="form-group">
+  <input required type="address" formControlName="address" placeholder="address" ngModel>
+  <span class= error *ngIf="address.invalid && address.touched ">address is not valid</span>
+</div>
+
+  <br><br>
+  <button type="submit" [disabled]="addReso.invalid" class="btn btn-primary"> Submit Data</button>
+</form>
+

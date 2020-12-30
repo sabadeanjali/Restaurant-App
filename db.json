@@ -1,0 +1,72 @@
+{
+  "restaurants": [
+    {
+      "name": "McDonald Restaurant",
+      "email": "McD@test.com",
+      "address": "USA-",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "TacoBells restaurant",
+      "address": "USA 8",
+      "email": "TB@test.com"
+    },
+    {
+      "name": "Chillies restaurant",
+      "address": "USA 443",
+      "email": "Chillie@test.com",
+      "id": 4
+    },
+    {
+      "name": "Chillies restaurant",
+      "address": "USA 443",
+      "email": "Chillie@test.com",
+      "id": 5
+    },
+    {
+      "name": "Olive Garden",
+      "email": "OG@gail.co",
+      "address": "Australia, Au",
+      "id": 7
+    },
+    {
+      "name": "Subway",
+      "email": "SW@gail.co",
+      "address": "USA 8",
+      "id": 8
+    },
+    {
+      "name": "IHOP ",
+      "email": "I@gail.com",
+      "address": "SW, CT",
+      "id": 9
+    },
+    {
+      "name": "Poppy",
+      "email": "pig@g.com",
+      "address": "E.Hartford, USA",
+      "id": 10
+    },
+    {
+      "name": "Anjali Sabade",
+      "email": "s@gail.com",
+      "address": "28 Walcott green",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "name": "xscvs",
+      "email": "cxdxz",
+      "password": "Cxz",
+      "id": 1
+    },
+    {
+      "name": "Anushree",
+      "email": "anu@gmail.com",
+      "password": "hoihkj",
+      "id": 2
+    }
+  ]
+}

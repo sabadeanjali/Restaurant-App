@@ -1,0 +1,27 @@
+
+<h3>Register new user</h3>
+<div  *ngIf='alert' class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success</strong> Data entered successfully !
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form class='col-sm-10' [formGroup]="register" (ngSubmit)="registrationFun()">
+  <div class="form-group">
+  <label>Name</label><br>
+  <input required type="name" formControlName="name" placeholder="name" ngModel>
+  </div>
+  <div class="form-group">
+  <label>Eamil</label><br>
+  <input required type="email" formControlName="email" placeholder="email" ngModel>
+  <span class= error *ngIf="email.invalid && email.touched ">email is not valid</span>
+</div>
+<div class="form-group">
+  <label>Password</label><br>
+  <input required type="password" formControlName="password" placeholder="password" ngModel>
+  <span class= error *ngIf="password.invalid && password.touched ">password is not valid</span>
+</div>
+   <button type="submit" [disabled]="register.invalid" class="btn btn-primary"> Submit Data</button>
+</form>
+

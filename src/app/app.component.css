@@ -1,0 +1,9 @@
+footer{
+padding: 5px;
+background-color: coral;
+color: white;
+position: absolute;
+width: 100%;
+bottom: 0;
+left: 0;
+}
